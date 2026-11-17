@@ -74,7 +74,7 @@ function Header({ count, openCart, theme, toggleTheme }) {
 function Hero({ settings, content }) {
   const tagline = content?.heroHeadline || settings.tagline || 'Good food. Good vibe.';
   const standard = /^good food[., ]+good vibe[.! ]*$/i.test(tagline.trim());
-  return <section className="m-hero" id="home" aria-labelledby="m-hero-heading"><div className="m-wrap m-hero-grid">
+  return <section className="m-hero m-kandy-hero" id="home" aria-labelledby="m-hero-heading"><div className="m-wrap m-hero-grid">
     <div className="m-hero-copy"><div className="m-eyebrow"><span />WELCOME TO MIKUN <small>01 / THE EXPERIENCE</small></div><h1 id="m-hero-heading">{standard ? <>Good food.<br /><em>Good vibe.</em></> : tagline}</h1><p>{content?.heroDescription || 'Comforting favourites, colourful plates and moments worth sharing. Find your next good food mood at MIKUN.'}</p><div className="m-hero-actions"><a className="m-button m-button-green" href="#menu">Explore our menu <Icon name="arrow" size={19} /></a><a className="m-text-link" href="#reservations">Book a table <Icon name="up" size={18} /></a></div><div className="m-hero-foot"><b /> Dishes <span>•</span> Proteins <span>•</span> Drinks</div></div>
     <div className="m-hero-media"><div className="m-hero-image"><img src="/photos/jollof-hero.jpg" alt="Illustrative photograph of jollof rice and chicken skewers" fetchPriority="high" /></div><div className="m-hero-stamp" aria-hidden="true"><span>GOOD FOOD</span><strong>✳</strong><span>GOOD VIBE</span></div><div className="m-hero-caption"><span>01 / FOOD & FEELING</span><span>Illustrative food photography</span></div></div>
   </div></section>;

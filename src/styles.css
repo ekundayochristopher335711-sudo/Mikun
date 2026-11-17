@@ -418,3 +418,74 @@ img { display: block; max-width: 100%; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Kandy's Treats inspired storefront direction: utility-first ordering, bold food photography, and a bright kitchen accent. */
+.m-site { --m-kandy-cream: #f5f3eb; --m-kandy-ink: #171c16; --m-kandy-lime: #c9f04a; }
+.m-header { padding-top: 30px; background: var(--m-kandy-cream); border-bottom-color: rgba(23, 28, 22, .16); }
+.m-header::before { content: 'FLAT DELIVERY AVAILABLE  •  PICKUP IS FREE  •  KITCHEN OPEN DAILY'; position: absolute; inset: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 30px; padding: 0 18px; overflow: hidden; background: var(--m-kandy-lime); color: #151b12; font-size: 10px; font-weight: 900; letter-spacing: .14em; text-align: center; white-space: nowrap; }
+.m-header-inner { min-height: 78px; }
+.m-brand { flex-basis: 158px; width: 158px; height: 57px; border: 0; border-radius: 0; background: #0e170d; box-shadow: none; }
+.m-nav a { font-size: 11px; letter-spacing: .01em; }
+.m-header-order { border-radius: 999px; background: var(--m-kandy-lime); }
+.m-kandy-hero { background: var(--m-kandy-cream); }
+.m-kandy-hero .m-hero-grid { min-height: 650px; padding-top: 65px; padding-bottom: 58px; }
+.m-kandy-hero .m-hero-copy { max-width: 650px; }
+.m-kandy-hero .m-eyebrow { color: #50634e; }
+.m-kandy-hero .m-eyebrow > span { width: 9px; height: 9px; border-radius: 50%; background: var(--m-kandy-lime); box-shadow: 0 0 0 6px rgba(201,240,74,.24); }
+.m-kandy-hero .m-hero h1 { max-width: 640px; margin-top: 27px; font-size: clamp(5.5rem, 8.6vw, 9.8rem); line-height: .78; letter-spacing: -.075em; }
+.m-kandy-hero .m-hero h1 em { color: #2e5d2a; }
+.m-kandy-hero .m-hero-copy > p { max-width: 455px; color: #536252; font-size: clamp(16px, 1.25vw, 19px); }
+.m-kandy-hero .m-hero-actions { gap: 14px; }
+.m-kandy-hero .m-button-green { border-radius: 999px; background: var(--m-kandy-lime); }
+.m-kandy-hero .m-text-link { border: 0; color: #294426; }
+.m-kandy-hero .m-hero-image { height: 525px; border-radius: 28px 96px 28px 28px; }
+.m-kandy-hero .m-hero-stamp { left: -44px; bottom: 70px; width: 112px; height: 112px; background: var(--m-kandy-lime); }
+.m-kandy-hero .m-hero-caption { color: #667462; }
+.m-brand-strip { min-height: 58px; background: #152014; color: var(--m-kandy-lime); font-family: 'DM Sans', Arial, sans-serif; font-size: 10px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+.m-brand-strip b { color: #f2f4eb; font-size: 15px; }
+.m-food-story { background: var(--m-kandy-cream); }
+.m-food-story .m-section-heading { margin-bottom: 35px; }
+.m-food-story .m-section-heading h2, .m-menu-section .m-section-heading h2 { font-size: clamp(4.1rem, 6vw, 6.6rem); }
+.m-food-card > a { border-radius: 18px; }
+.m-food-card:nth-child(2) > a { border-radius: 18px; }
+.m-food-meta { color: #697766; }
+.m-menu-section { background: #e9eee2; }
+.m-menu-section .m-section-heading > p { max-width: 420px; }
+.m-menu-controls { padding: 13px 0 22px; border-top: 1px solid rgba(23, 28, 22, .17); border-bottom: 1px solid rgba(23, 28, 22, .17); }
+.m-menu-tabs button { border-radius: 999px; border-color: rgba(23, 28, 22, .22); }
+.m-menu-tabs button.is-active, .m-menu-tabs button:hover { border-color: var(--m-kandy-lime); background: var(--m-kandy-lime); }
+.m-menu-search { border-radius: 999px; border-color: rgba(23, 28, 22, .22); }
+.m-menu-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; padding-top: 27px; }
+.m-menu-item { display: flex; align-items: flex-end; gap: 18px; min-height: 152px; padding: 20px; border: 1px solid rgba(23, 28, 22, .13); border-radius: 18px; background: var(--m-kandy-cream); box-shadow: 0 12px 30px rgba(31, 48, 28, .045); transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.m-menu-item:hover { transform: translateY(-3px); border-color: rgba(69, 110, 54, .4); box-shadow: 0 18px 35px rgba(31, 48, 28, .1); }
+.m-menu-number { display: none; }
+.m-menu-copy { min-width: 0; flex: 1; }
+.m-menu-copy h3 { margin-bottom: 5px; font-size: clamp(17px, 1.45vw, 22px); }
+.m-menu-copy p { font-size: 12px; }
+.m-menu-copy::before { content: 'COOKED TO ORDER'; display: block; margin-bottom: 9px; color: #6d7d69; font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+.m-menu-actions { flex: 0 0 auto; flex-wrap: wrap; justify-content: flex-end; }
+.m-menu-actions strong { min-width: 72px; color: #245524; font-size: 17px; }
+.m-favorite, .m-add { border-color: rgba(23, 28, 22, .22); }
+.m-add { border-color: var(--m-kandy-lime); background: var(--m-kandy-lime); }
+.m-menu-foot { color: #6d7d69; }
+.m-about { background: #152014; }
+.m-about-photo { border-radius: 24px; }
+.m-about-copy h2 { font-size: clamp(4.1rem, 6vw, 6.6rem); }
+.m-gallery-tile { border-radius: 17px; }
+.m-reservations { background: #e9eee2; }
+.m-reservation-form { border: 1px solid rgba(23, 28, 22, .1); border-radius: 18px; box-shadow: 0 20px 50px rgba(26, 45, 25, .08); }
+.m-contact { background: var(--m-kandy-lime); }
+.m-footer { background: #10170f; }
+
+@media (max-width: 700px) {
+  .m-header { padding-top: 28px; }
+  .m-header::before { content: 'PICKUP FREE  •  DELIVERY AVAILABLE  •  KITCHEN OPEN'; height: 28px; font-size: 8px; letter-spacing: .08em; }
+  .m-header-inner { min-height: 68px; }
+  .m-brand { flex-basis: 136px; width: 136px; height: 50px; }
+  .m-kandy-hero .m-hero-grid { padding-top: 54px; }
+  .m-kandy-hero .m-hero h1 { font-size: clamp(4.6rem, 16.5vw, 7.2rem); }
+  .m-kandy-hero .m-hero-image { height: clamp(300px, 85vw, 500px); border-radius: 22px 58px 22px 22px; }
+  .m-kandy-hero .m-hero-stamp { left: -6px; bottom: 65px; width: 88px; height: 88px; }
+  .m-menu-list { grid-template-columns: 1fr; gap: 10px; }
+  .m-menu-item { min-height: 134px; padding: 16px; }
+}
