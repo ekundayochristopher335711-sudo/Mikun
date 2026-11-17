@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite/
+*.log
+server/data/*.sqlite
+server/data/*.sqlite-shm
+server/data/*.sqlite-wal
+server/data/media/*
+preview/chrome-qa*/
